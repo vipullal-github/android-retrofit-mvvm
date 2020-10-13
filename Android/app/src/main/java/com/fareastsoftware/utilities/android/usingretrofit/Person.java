@@ -1,10 +1,30 @@
 package com.fareastsoftware.utilities.android.usingretrofit;
 
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Person {
 
+    @SerializedName("givenName")
+    @Expose
     String givenName;
+
+    @SerializedName("familyName")
+    @Expose
     String familyName;
+
+    @SerializedName("id")
+    @Expose
     int id;
+
+    public Person(String givenName, String familyName, int id) {
+        this.givenName = givenName;
+        this.familyName = familyName;
+        this.id = id;
+    }
+
+    
 
     public String getGivenName() {
         return givenName;
