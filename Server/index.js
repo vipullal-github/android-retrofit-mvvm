@@ -26,20 +26,31 @@ personsList.push(       {
 
 var mNextPersonId = personsList.length + 1;
 
+// function generateJSON(){
+//     var myObj = {
+//         persons: []
+//     };
+//     personsList.map(  function( aPerson ){
+//     myObj.persons.push({
+//         "givenName": aPerson.givenName,
+//         "famiyName": aPerson.familyName,
+//         "id": aPerson.id
+//         });
+//     });
+//     return myObj;
+// }
+
 function generateJSON(){
-    var myObj = {
-        persons: []
-    };
+    var myObj = [];
     personsList.map(  function( aPerson ){
-    myObj.persons.push({
+    myObj.push({
         "givenName": aPerson.givenName,
-        "famiyName": aPerson.familyName,
+        "familyName": aPerson.familyName,
         "id": aPerson.id
         });
     });
     return myObj;
 }
-
 
 //--------------------------------------------
 // curl -v http://localhost:3000/persons
@@ -79,7 +90,7 @@ function addPerson( aPerson ){
 }
 
 // --------------------------------------------------------
-app.delete("/persons", (req, resp, next){
+app.delete("/persons", (req, resp, next)=>{
     
 });
 
