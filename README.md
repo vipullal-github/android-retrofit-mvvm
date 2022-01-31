@@ -9,8 +9,7 @@ The codebase includes a simple Restful endpoint using Node.js.
 1.  cd to the Server directory and hit _npm install_. This will pull in all the modules required 
     for the server
 1.  From the command line, hit _npm start_. You should see this on the console:
->   personserver@1.0.0 start D:\projects\testapps\android\UsingRetrofit1\Server
->   nodemon server.js
+>   >   nodemon server.js
 >
 >   [nodemon] 2.0.4
 >   [nodemon] to restart at any time, enter `rs`
